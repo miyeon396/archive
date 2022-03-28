@@ -14,6 +14,7 @@
             <property name="hibernate.show_sql" value="true"/><!-- 콘솔에 하이버네이트가 실행하는 SQL 출력 -->
             <property name="hibernate.format_sql" value="true"/><!-- SQL 출력 시 보기 쉽게 정렬 -->
             <property name="hibernate.use_sql_comments" value="true"/><!-- 쿼리 출력 시 왜 나오는 지 주석도 함께 출력 -->
+            <property name="hibernate.jdbc.batch_size" value="10"/><!-- 디비 보낼 때 한방에 모아서 보냄 (=버퍼링에 모아서 write)-->
 
         </properties>
     </persistence-unit>

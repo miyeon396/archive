@@ -15,6 +15,15 @@ public class Member {
 //    @Column(name = "username") //칼럼이 다르다면 칼럼 어노테이션으로 재지정
     private String name;
 
+    public Member(long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public Member() { //기본 생성자 추가해줘야함
+
+    }
+
     public Long getId() {
         return id;
     }
