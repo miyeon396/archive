@@ -23,7 +23,7 @@ public class JpaPersistContextExampleMain {
 //            System.out.println("=============="); //요게 찍히고 나서 insert 쿼리가 찍힘. commit하고 한방에 insert 모아서 치는 것.
 
             //수정
-            Member member = em.find(Member.class, 150L);
+            MemberBackup member = em.find(MemberBackup.class, 150L);
             member.setName("ZZZZ"); //jpa 목적은 콜렉션 다루듯이.. 찾아서 변경하면 알아서 수정됨.
             System.out.println("============");
 

@@ -41,10 +41,10 @@ public class JpaMain {
 
             //2. JPQL
             //em.createQuery해서 쿼리를 칠 수 있음. jpa는 테이블 대상으로 쿼리 하지 않음. 대상(Member)을 다가져 옴 == 대상이 테이블이 아닌 객체가 되어야함
-            List<Member> resultList = em.createQuery("select m from Member as m", Member.class)
+            List<MemberBackup> resultList = em.createQuery("select m from MemberBackup as m", MemberBackup.class)
                     .getResultList();
 
-            for (Member member: resultList) {
+            for (MemberBackup member: resultList) {
                 System.out.println("member.name="+member.getName());
             }
 
